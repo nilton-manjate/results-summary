@@ -1,22 +1,95 @@
-﻿/* Importing local fonts */
+﻿/* Importing font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
+/* Declaring color variables */
+:root {
+  /* Primary */
+  --lightRed: hsl(0, 100%, 67%);
+  --orangeyYellow: hsl(39, 100%, 56%);
+  --greenTeal: hsl(166, 100%, 37%);
+  --cobaltBlue: hsl(234, 85%, 45%);
 
-/* Declaring variables */
+  /* Gradients */
+  --slateBlue: hsl(252, 100%, 67%); /* background */
+  --royalBlue: hsl(241, 81%, 54%); /* background */
+  --violetBlue: hsla(256, 72%, 46%, 1); /* circle */
+  --persianBlue: hsla(241, 72%, 46%, 0); /* circle */
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --paleBlue: hsl(221, 100%, 96%);
+  --lavender: hsl(241, 100%, 89%);
+  --grayBlue: hsl(224, 30%, 27%);
+}
+
+/* Reseting the stylesheet */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Reseting the stylesheet */
-
-
 /* Body */
-
-
-/* Main */
-
+body {
+  heigth: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Hanken Grotesk", sans-serif;
+}
 
 /* Blue Section */
+.blue {
+  width: 300px;
+  padding: 20px 39px 35px 39px;
+  background-image: linear-gradient(180deg, var(--slateBlue), var(--royalBlue));
+  color: white;
+  border-radius: 0  0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.blue span {
+  color: var(--lavender);
+}
+
+.result {
+  background-image: linear-gradient(180deg, var(--violetBlue), var(--persianBlue));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+}
+
+.num {
+  font-size: 55px;
+  font-weight: 800;
+  color: var(--paleBlue);
+}
+
+.total {
+  color: var(--lavender);
+  font-size: 14px;
+}
+
+.text {
+  text-align: center;
+}
+
+.text h1 {
+  color: var(--paleBlue);
+  margin-bottom: 15px;
+}
+
+.text p {
+  font-size: 18px;
+  color: var(--lavender);
+}
 
 
 /* White Section */
