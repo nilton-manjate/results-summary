@@ -30,10 +30,8 @@
 
 /* Body */
 body {
-  heigth: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   font-family: "Hanken Grotesk", sans-serif;
 }
@@ -179,4 +177,28 @@ button:hover {
   background-image: linear-gradient(180deg, var(--slateBlue), var(--royalBlue));
   border-color: (--paleBlue);
 }
+
+
 /* Media  */
+
+@media only screen and (min-width: 620px) {
+
+  body {
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.1);
+  }
+
+  .blue {
+    width: 250px;
+    border-radius: 20px;
+  }
+
+  .white {
+    width: 250px;
+  }
+}
