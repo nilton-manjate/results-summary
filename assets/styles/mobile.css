@@ -49,11 +49,11 @@ body {
   gap: 20px;
 }
 
-.blue span {
+.blue span { /* Text: Your Result */
   color: var(--lavender);
 }
 
-.result {
+.result {  /* Circle */
   background-image: linear-gradient(180deg, var(--violetBlue), var(--persianBlue));
   border-radius: 50%;
   display: flex;
@@ -64,13 +64,13 @@ body {
   height: 130px;
 }
 
-.number {
+.number { /* Big Number */
   font-size: 55px;
   font-weight: 800;
   color: var(--paleBlue);
 }
 
-.total {
+.total { /* of 100 */
   color: var(--lavender);
   font-size: 14px;
 }
@@ -102,13 +102,13 @@ body {
   color: var(--grayBlue);
 }
 
-.summary {
+.summary { 
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.order {
+.order { /* For each category */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -116,11 +116,12 @@ body {
   border-radius: 7px;
 }
 
-.description {
+.description { /* Icon and description text */
   display: flex;
   gap: 10px;
 }
 
+/* Style for each category and description */
 .reaction {
   background-color: hsla(0, 100%, 67%, 0.1);
 }
@@ -153,11 +154,11 @@ body {
   color: var(--cobaltBlue);
 }
 
-.num {
+.num { /* of 100 */
   color: var(--grayBlue);
 }
 
-.num span {
+.num span { /* Result for each category */
   font-weight: 800;
 }
 
@@ -169,13 +170,12 @@ button {
   font-size: 18px;
   color: var(--paleBlue);
   border-radius: 30px;
-  border: 1px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
   cursor: pointer;
   background-image: linear-gradient(180deg, var(--slateBlue), var(--royalBlue));
-  border-color: (--paleBlue);
 }
 
 
